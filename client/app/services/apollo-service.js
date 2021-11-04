@@ -1,8 +1,6 @@
 import Service from '@ember/service'
 import { queryManager } from 'ember-apollo-client'
 import query from 'peek-client/gql/queries/events.graphql'
-import bookingsQuery from 'peek-client/gql/queries/bookings.graphql'
-import createBookingMutation from 'peek-client/gql/queries/createBooking.graphql'
 
 /**
  * Emberjs planner service
@@ -25,16 +23,5 @@ export default class ApolloService extends Service {
    */
   async fetchAllEvents () {
     return await this.apollo.query({ query }, 'events')
-  }
-
-  async fetchAllBookings () {
-    return await this.apollo.query({ query: bookingsQuery }, 'bookings')
-  }
-
-  async createBooking () {
-    return await this.apollo.query({
-      query: createBookingMutation, 
-      variables: { first_name: 'test', last_name: 'last' }
-    }, 'createBooking')
   }
 }

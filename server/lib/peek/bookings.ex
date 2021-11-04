@@ -15,10 +15,6 @@ defmodule Peek.Bookings do
     {:ok, Repo.all(query)}
   end
 
-  def all_bookings() do
-    Repo.all(Booking)
-  end
-
   def create_booking(event_id, attrs \\ %{}) do
     event = Events.get_event(event_id)
 

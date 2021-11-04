@@ -1,5 +1,0 @@
-mutation create_booking($event_id: Integer!, $first_name: String!, $last_name: String!) {
-  create_booking(event_id: $event_id, first_name: $first_name, last_name: $last_name) {
-    first_name
-  }
-}

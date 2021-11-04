@@ -1,7 +1,6 @@
 #!/bin/bash
 # Docker entrypoint script.
 
-echo "entrypoint sh"
 # Wait until Postgres is ready
 echo "$(date) - running entrypoint.sh"
 
