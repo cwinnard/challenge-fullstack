@@ -18,7 +18,9 @@ new apps. The domain and challenges are similar to the types of problems we have
 
 ## Expected Time & Effort
 
-We don't want you to have to take too much time with this challenge and ask that you do not spend more than 4 hours.
+We don't want you to have to take too much time with this challenge. For senior
+level roles, we are asking you to limit your time to a half of a day. For more
+junior-level roles, please don't take more than a day.
 
 ## The Sample Project
 
