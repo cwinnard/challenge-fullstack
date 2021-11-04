@@ -487,5 +487,33 @@ p {
 
 .calendar {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.calendar-day {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  border: 1px solid #016aba;
+  margin: 10px
+}
+
+.event-data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+
+.start-time {
+  margin: 0px 10px
+}
+
+.duration {
+  margin: 0px 10px
+}
+
+.book-button {
+  margin: 0px 10px;
 }

@@ -1,10 +1,29 @@
 {{page-title "Calendar"}}
-    <h2>Hello calendar</h2>
+    <h2>Denver Wine Tours</h2>
     <div class="calendar">
-      {{#each-in @model as |key value|}}
-        <h3>
-          {{key}}
-        </h3>
+      {{#each-in @model as |key events|}}
+        <div class="calendar-day">
+          <h3>
+            {{key}}
+          </h3>
+          <div class="days-events">
+              {{#each events as |item|}}
+                <div class="event-data">
+                  <div class="start-time">Start Time: {{item.startTime}}</div>
+                  <div class="duration">{{item.duration}} minutes</div>
+                  {{#if item.booked}}
+                    <button class="book-button" disabled>
+                      Not Available
+                    </button>
+                  {{else}}
+                    <button class="book-button">
+                      Book Now
+                    </button>
+                  {{/if}}
+                </div>
+              {{/each}}
+          </div>
+        </div>
       {{/each-in}}
     </div>
 {{outlet}}
