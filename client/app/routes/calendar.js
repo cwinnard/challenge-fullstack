@@ -7,7 +7,8 @@ const formatEvent = (event, bookings) => {
     id: event.id,
     startTime: event.start.split('T')[1].slice(0, 5),
     duration: event.duration,
-    booked: matchingBooking ? true : false
+    booked: matchingBooking ? true : false,
+    bookedBy: matchingBooking ? `${matchingBooking.first_name} ${matchingBooking.last_name}` : ''
   }
 }
 

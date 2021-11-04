@@ -1,5 +1,13 @@
 {{page-title "Calendar"}}
+  <div class="calendar-container">
     <h2>Denver Wine Tours</h2>
+    <div class="name-container">
+      <h5>Enter your name to get started!</h5>
+      <label>First Name</label>
+      {{input type="text" value=first_name}}
+      <label>Last Name</label>
+      {{input type="text" value=last_name}}
+    </div>
     <div class="calendar">
       {{#each-in @model as |key events|}}
         <div class="calendar-day">
@@ -12,7 +20,8 @@
                   <div class="start-time">Start Time: {{item.startTime}}</div>
                   <div class="duration">{{item.duration}} minutes</div>
                   {{#if item.booked}}
-                    <button class="book-button" disabled>
+                    <button class="book-button tooltip" disabled>
+                      <span class="tooltiptext">Booked by {{item.bookedBy}}</span>
                       Not Available
                     </button>
                   {{else}}
@@ -26,4 +35,5 @@
         </div>
       {{/each-in}}
     </div>
+  </div>
 {{outlet}}
