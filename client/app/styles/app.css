@@ -484,6 +484,7 @@ p {
 .article-no-bg {
   background-color: white !important;
 }
+<<<<<<< HEAD
 
 .calendar-container {
   display: flex;
@@ -554,3 +555,5 @@ p {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+=======
+>>>>>>> parent of 0dd8e1c (calendar view)
