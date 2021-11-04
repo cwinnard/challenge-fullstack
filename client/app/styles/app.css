@@ -499,6 +499,12 @@ p {
   flex-wrap: wrap;
 }
 
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .calendar-day {
   display: flex;
   flex-direction: column;
