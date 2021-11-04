@@ -1,0 +1,7 @@
+query {
+  bookings {
+    first_name
+    last_name
+    event_id
+  }
+}

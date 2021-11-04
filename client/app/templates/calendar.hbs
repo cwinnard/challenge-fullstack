@@ -16,7 +16,7 @@
                       Not Available
                     </button>
                   {{else}}
-                    <button class="book-button">
+                    <button class="book-button" {{action 'createBooking' item.id on='click'}}>
                       Book Now
                     </button>
                   {{/if}}
