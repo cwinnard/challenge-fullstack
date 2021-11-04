@@ -1,0 +1,10 @@
+{{page-title "Calendar"}}
+    <h2>Hello calendar</h2>
+    <div class="calendar">
+      {{#each-in @model as |key value|}}
+        <h3>
+          {{key}}
+        </h3>
+      {{/each-in}}
+    </div>
+{{outlet}}

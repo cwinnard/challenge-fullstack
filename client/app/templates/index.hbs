@@ -3,6 +3,9 @@
   <h2>
     Welcome!
   </h2>
+  <LinkTo @route='calendar'>
+    Calendar
+  </LinkTo>
   {{#each @model as |item|}}
     {{item.id}}-{{item.title}}-{{item.start}}<br />
   {{/each}}

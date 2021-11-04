@@ -484,3 +484,8 @@ p {
 .article-no-bg {
   background-color: white !important;
 }
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
